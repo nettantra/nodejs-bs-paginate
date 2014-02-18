@@ -4,7 +4,7 @@ var libpath = process.env['NODEJSYAPAGINATE'] ? '../lib-cov' : '../lib';
 
 var should = require('should');
 var underscore = require('underscore');
-var paginate = require(libpath+'/main');
+var paginate = require(libpath+'/index');
 
 describe('paginate', function() {
     describe('with no arguments', function() {

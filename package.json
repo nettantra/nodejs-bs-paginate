@@ -1,8 +1,9 @@
 {
-    "author": "ami44",
-    "name": "nodejs-yapaginate",
-    "description": "yet another paginate view helper",
-    "version": "0.0.9",
+    "author": "Sanat Panda",
+    "email": "sanat@nettantra.net",
+    "name": "nodejs-bs-paginate",
+    "description": "Another paginate view helper based on nodejs-yapaginate by ami44",
+    "version": "0.0.1",
     "main": "lib/index.js",
     "scripts": {
         "test": "mocha test/*.js"
@@ -19,10 +20,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/ami44/nodejs-yapaginate"
+        "url": "https://github.com/nettantra/nodejs-bs-paginate"
     },
     "keywords" : [ "page", "paginate", "pagination", "twitter bootstrap"],
     "bugs" : {
-        "url" : "https://github.com/ami44/nodejs-yapaginate/issues"
+        "url" : "https://github.com/nettantra/nodejs-bs-paginate/issues"
     }
 }

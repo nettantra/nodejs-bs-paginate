@@ -1,24 +1,24 @@
 |Travisci|_
 
-.. |Travisci| image:: https://secure.travis-ci.org/ami44/nodejs-yapaginate.png
-.. _Travisci: https://travis-ci.org/ami44/nodejs-yapaginate
+.. |Travisci| image:: https://secure.travis-ci.org/nettantra/nodejs-bs-paginate.png
+.. _Travisci: https://travis-ci.org/nettantra/nodejs-bs-paginate
 
 
 
 |Nodeico|_
 
-.. |Nodeico| image:: https://nodei.co/npm-dl/nodejs-yapaginate.png
-.. _Nodeico: https://npmjs.org/package/nodejs-yapaginate
+.. |Nodeico| image:: https://nodei.co/npm-dl/nodejs-bs-paginate.png
+.. _Nodeico: https://npmjs.org/package/nodejs-bs-paginate
 
 
-nodejs-yapaginate 
+nodejs-bs-paginate 
 =========================================================
 
 Yet another paginate view helper for nodejs. 
 
 Generate html twitter bootstrap `pagination <http://twitter.github.com/bootstrap/components.html#pagination>`_.
 
-.. image:: https://github.com/ami44/nodejs-yapaginate/raw/master/media/pagination.png
+.. image:: https://github.com/nettantra/nodejs-bs-paginate/raw/master/media/pagination.png
 
 or json for another usage ::
 
@@ -51,11 +51,11 @@ npm :
 - Add ::
 
     "dependencies": { 
-        "nodejs-yapaginate": ""
+        "nodejs-bs-paginate": ""
     },
 
 - Execute ``npm install``
-- Add ``var paginate = require('nodejs-yapaginate');`` in your code
+- Add ``var paginate = require('nodejs-bs-paginate');`` in your code
 
 
 browser (backbone, derbyjs ...)
@@ -63,7 +63,7 @@ browser (backbone, derbyjs ...)
 
 Add ::
 
-    <script src="/nodejs-yapaginate/lib/main.js"></script>
+    <script src="/nodejs-bs-paginate/lib/index.js"></script>
 
 Usage
 ------------------------------------------
@@ -103,10 +103,13 @@ nextText      '&raquo;'           text for goto next page
 lastText      '&raquo;&raquo;'    text for goto last page
 addSep        ''                  add \\n in html output (only for debug)
 getJson        false              get only Json ( not generate Html )
-setJson        false               consume json (nodejs-yapaginate compatible) to generate html (not use getJson and setJson)
+setJson        false               consume json (nodejs-bs-paginate compatible) to generate html (not use getJson and setJson)
 ============= =================== ===========================================
 
 
 Licence
 ------------------------------------------
 Code licensed under the `GNU GENERAL PUBLIC LICENSE <http://www.gnu.org/copyleft/gpl.html>`_ Version 3 
+
+
+Forked From: https://github.com/ami44/nodejs-yapaginate
