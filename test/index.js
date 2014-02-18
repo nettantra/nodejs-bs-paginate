@@ -131,7 +131,7 @@ describe('paginate', function() {
         // ----------------------------------------------------------
         it('return html from json', function() {
             
-            var result = paginate({setJson: {
+            var result = paginate({ baseCssClass: 'pagination-lg', setJson: {
                 options: { showFirstLast: true, showPrevNext: true, showStep: true },
                 first: { cssclass: 'disable', href: '#', text: '&laquo;&laquo;' },
                 previous: { cssclass: 'disable', href: '#', text: '&laquo;' },
@@ -148,7 +148,7 @@ describe('paginate', function() {
                 next: { cssclass: '', href: '/unknowurl?pageno=2', text: '&raquo;' },
                 last: { cssclass: '', href: '/unknowurl?pageno=100', text: '&raquo;&raquo;' } 
             }});
-            result.should.eql('<ul class="pagination">\
+            result.should.eql('<ul class="pagination pagination-lg">\
 <li class="disable"><a href="#">&laquo;&laquo;</a></li>\
 <li class="disable"><a href="#">&laquo;</a></li>\
 <li class="active"><a href="#">1</a></li>\
