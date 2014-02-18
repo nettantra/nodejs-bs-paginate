@@ -45,7 +45,7 @@ npm :
 - Add ::
 
     "dependencies": { 
-        "nodejs-bs-paginate": ""
+        "nodejs-bs-paginate": "git://github.com/nettantra/nodejs-bs-paginate.git#master"
     },
 
 - Execute ``npm install``
