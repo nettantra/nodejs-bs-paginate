@@ -14,7 +14,7 @@ describe('paginate', function() {
         // ----------------------------------------------------------
         it('return valid html without option', function() {
             var result = paginate();
-            result.should.eql('<div class="pagination"><ul>\
+            result.should.eql('<ul class="pagination">\
 <li class="disable"><a href="#">&laquo;&laquo;</a></li>\
 <li class="disable"><a href="#">&laquo;</a></li>\
 <li class="active"><a href="#">1</a></li>\
@@ -27,7 +27,7 @@ describe('paginate', function() {
 <li class=""><a href="/unknowurl?pageno=100">100</a></li>\
 <li class=""><a href="/unknowurl?pageno=2">&raquo;</a></li>\
 <li class=""><a href="/unknowurl?pageno=100">&raquo;&raquo;</a></li>\
-</ul></div>');
+</ul>');
         });
         
         // ----------------------------------------------------------
@@ -35,12 +35,12 @@ describe('paginate', function() {
         // ----------------------------------------------------------
         it('return html without step', function() {
             var result = paginate({showStep:false});
-            result.should.eql('<div class="pagination"><ul>\
+            result.should.eql('<ul class="pagination">\
 <li class="disable"><a href="#">&laquo;&laquo;</a></li>\
 <li class="disable"><a href="#">&laquo;</a></li>\
 <li class=""><a href="/unknowurl?pageno=2">&raquo;</a></li>\
 <li class=""><a href="/unknowurl?pageno=100">&raquo;&raquo;</a></li>\
-</ul></div>');
+</ul>');
         });
         
         // ----------------------------------------------------------
@@ -148,7 +148,7 @@ describe('paginate', function() {
                 next: { cssclass: '', href: '/unknowurl?pageno=2', text: '&raquo;' },
                 last: { cssclass: '', href: '/unknowurl?pageno=100', text: '&raquo;&raquo;' } 
             }});
-            result.should.eql('<div class="pagination"><ul>\
+            result.should.eql('<ul class="pagination">\
 <li class="disable"><a href="#">&laquo;&laquo;</a></li>\
 <li class="disable"><a href="#">&laquo;</a></li>\
 <li class="active"><a href="#">1</a></li>\
@@ -161,7 +161,7 @@ describe('paginate', function() {
 <li class=""><a href="/unknowurl?pageno=100">100</a></li>\
 <li class=""><a href="/unknowurl?pageno=2">&raquo;</a></li>\
 <li class=""><a href="/unknowurl?pageno=100">&raquo;&raquo;</a></li>\
-</ul></div>');
+</ul>');
         });
         
         
