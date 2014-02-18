@@ -4,13 +4,6 @@
 .. _Travisci: https://travis-ci.org/nettantra/nodejs-bs-paginate
 
 
-
-|Nodeico|_
-
-.. |Nodeico| image:: https://nodei.co/npm-dl/nodejs-bs-paginate.png
-.. _Nodeico: https://npmjs.org/package/nodejs-bs-paginate
-
-
 nodejs-bs-paginate 
 =========================================================
 
@@ -23,6 +16,7 @@ Generate html twitter bootstrap `pagination <http://twitter.github.com/bootstrap
 or json for another usage ::
 
     { 
+	baseCssClass: 'space separated list of classes',
         options: { showFirstLast: true, showPrevNext: true, showStep: true },
         first: { cssclass: 'disable', href: '#', text: '&laquo;&laquo;' },
         previous: { cssclass: 'disable', href: '#', text: '&laquo;' },
@@ -83,7 +77,7 @@ Options
 ============= =================== ===========================================
 name          default             description  
 ============= =================== ===========================================
-baseCssClass   ''                 Class to the ul element
+baseCssClass  ''                  classes for the ul element
 totalItem     1000                total items
 itemPerPage   10                  items per page
 currentPage   1                   current selected page
@@ -112,4 +106,6 @@ Licence
 Code licensed under the `GNU GENERAL PUBLIC LICENSE <http://www.gnu.org/copyleft/gpl.html>`_ Version 3 
 
 
+Credits
+------------------------------------------
 Forked From: https://github.com/ami44/nodejs-yapaginate
