@@ -83,6 +83,7 @@ Options
 ============= =================== ===========================================
 name          default             description  
 ============= =================== ===========================================
+baseCssClass   ''                 Class to the ul element
 totalItem     1000                total items
 itemPerPage   10                  items per page
 currentPage   1                   current selected page
