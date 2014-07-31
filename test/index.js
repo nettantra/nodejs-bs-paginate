@@ -163,8 +163,5 @@ describe('paginate', function() {
 <li class=""><a href="/unknowurl?pageno=100">&raquo;&raquo;</a></li>\
 </ul>');
         });
-        
-        
-        
     });
 });
